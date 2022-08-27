@@ -411,6 +411,7 @@ a:hover {
     opacity: 0;
     pointer-events: none;
     width: 822px;
+    height: 170px;
     top: 780px;
     left: 530px;
     margin: 0 auto;
@@ -430,6 +431,10 @@ a:hover {
 
 .project img {
     transition: transform 100ms ease-in-out;
+}
+
+.project p {
+    margin-bottom: .5rem;
 }
 
 .container .project:hover {
@@ -456,31 +461,31 @@ a:hover {
 }
 .projects.focus ~ .project-2 {
     z-index: 1000;
-    transform: translateY(170%);
+    transform: translateY(160%);
     opacity: 1;
     pointer-events: all;
 }
 .projects.focus ~ .project-3 {
     z-index: 1000;
-    transform: translateY(320%);
+    transform: translateY(270%);
     opacity: 1;
     pointer-events: all;
 }
 .projects.focus ~ .project-4 {
     z-index: 1000;
-    transform: translateY(420%);
+    transform: translateY(380%);
     opacity: 1;
     pointer-events: all;
 }
 .projects.focus ~ .project-5 {
     z-index: 1000;
-    transform: translateY(540%);
+    transform: translateY(490%);
     opacity: 1;
     pointer-events: all;
 }
 .projects.focus ~ .project-6 {
     z-index: 1000;
-    transform: translateY(670%);
+    transform: translateY(600%);
     opacity: 1;
     pointer-events: all;
 }
