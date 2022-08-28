@@ -100,7 +100,7 @@ a:hover {
     padding: 1rem;
     width: 862px;
     left: 510px;
-    top: 530px;
+    top: 500px;
 
     background: #FFFFFF;
     border-radius: 12px;
@@ -316,6 +316,32 @@ a:hover {
     grid-area: job-description;
 }
 
+.job-links {
+    grid-area: job-links;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.job-links a {
+    text-align: center;
+    background-color: #fff;
+    border-radius: .75rem;
+    border: thin solid #2F80ED;
+    color: #2F80ED;
+    padding: .5rem;
+    transition: font-size 150ms ease-in-out, background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+.job-links a:hover {
+    text-decoration: none;
+    font-size: 1.20rem;
+    background-color: #2F80ED;
+    color: #fff;
+    box-shadow: 0px 0px 20px #215aa6,
+    0px 0px 20px #3da6ff;
+}
+
 .projects {
     position: absolute;
     padding: 1rem;
@@ -336,10 +362,7 @@ a:hover {
 }
 
 .project a {
-    color: black;
     font-size: inherit;
-    transition: none;
-    transform: none;
 }
 
 .projects:hover {
@@ -351,7 +374,7 @@ a:hover {
 }
 
 .projects .projects-content > p {
-    width: 10%;
+    width: 15%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -418,10 +441,10 @@ a:hover {
     padding: 1rem;
     border-radius: .75rem;
     grid-template-rows: auto auto;
-    grid-template-columns: .25fr .75fr;
+    grid-template-columns: .25fr .75fr .25fr;
     grid-template-areas: 
-        "job-photo job-title"
-        "job-photo job-description"
+        "job-photo job-title job-links"
+        "job-photo job-description job-links"
     ;
     column-gap: 1rem;
     row-gap: 1rem;

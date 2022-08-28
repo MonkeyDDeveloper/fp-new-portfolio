@@ -8,7 +8,7 @@ html(lang="es")
         link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet")
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-        link(rel="shortcut icon", href="/public/devChallenges.png", type="image/x-icon")
+        link(rel="shortcut icon", href="/public/logo_large.png", type="image/x-icon")
         link(rel="stylesheet", href="/public/index.css")
         title Personal Portfolio
     body 
@@ -46,7 +46,7 @@ html(lang="es")
                 .little-description
                     h4 About
                     span 
-                        | To complete my higher education, I developed a thesis project focused directly on web development, being self-taught to work with topics such as frontend, backend and databases. Although my affinity leans towards the server side, I continue to educate myself in the other topics related to web application development. I am currently looking for new opportunities in the technology world, especially for technologies such as NodeJS, JavaScript and MongoDB.
+                        |I studied automation and instrumentation learning topics such as arduino programming and programmable logic controllers (PLC). To complete my higher studies, I developed a thesis project focused directly on web development, being self-taught to work with topics such as frontend, backend and databases. Although my affinity leans towards the server side, I continue to train myself in the rest of the topics related to web application development. I am currently looking for new opportunities in the tech world, especially for technologies like NodeJS, JavaScript and MongoDB.
             .actual-skills
                 h4 Skills
                 .skill-levels
@@ -108,7 +108,9 @@ html(lang="es")
                         p I kept studying different things related to web development, and improving my skills in Nodejs, JavaScript, MongoDB, but also CSS, MySQL and Heroku, mainly.
             .projects
                 .projects-content
-                    p="Projects"
+                    p
+                        | Projects
+                        span.material-icons touch_app
                     p.show_projects_message="Click to show projects (6)"
             .project.project-1
                 .job-photo
@@ -117,7 +119,10 @@ html(lang="es")
                     p #NodeJS #MongoDB #Socket.io
                     h4 Enrollment Web Application
                 .job-description
-                    p Development of a web application based on NodeJS, using a document database (MongoDB) to improve efficiency in student enrollment at ISPIB MBR, Nueva Loja - Ecuador. You can check the code on #[a(href="https://github.com/MonkeyDDeveloper/tesis-appmatriculas" target="_blank") Github.]
+                    p Development of a web application based on NodeJS, using a document database (MongoDB) to improve efficiency in student enrollment at ISPIB MBR, Nueva Loja - Ecuador.
+                .job-links
+                    //- a.demo(href="", target="_blank") Demo
+                    a.github(href="https://github.com/MonkeyDDeveloper/tesis-appmatriculas", target="_blank") Github
             .project.project-2
                 .job-photo
                     img(src="/public/contact-saver.png", alt="contact-saver")
@@ -125,7 +130,10 @@ html(lang="es")
                     p #NodeJS #MySQL
                     h4 Simple Contact Saver
                 .job-description
-                    p Own challenge based on NodeJS, to store contact information in a relational database, MySQL. You can see the result by clicking #[a(href="https://fp-simple-contact-saver.herokuapp.com/" target="_blank") here] or you can check the code on #[a(href="https://github.com/MonkeyDDeveloper/fp-simple-contact-saver" target="_blank") Github.]
+                    p Own challenge based on NodeJS, to store contact information in a relational database, MySQL.
+                .job-links
+                    a.demo(href="https://fp-simple-contact-saver.herokuapp.com/", target="_blank") Demo
+                    a.github(href="https://github.com/MonkeyDDeveloper/fp-simple-contact-saver", target="_blank") Github
             .project.project-3
                 .job-photo
                     img(src="/public/edie-homepage.png", alt="edie-homepage")
@@ -133,7 +141,10 @@ html(lang="es")
                     p #CSS #HTML
                     h4 Edie HomePage Challenge
                 .job-description
-                    p A challenge provided by devChallenges.io, to improve CSS skills, mainly flexbox and gridcss. You can see the result by clicking #[a(href="https://fp-edie-homepage.herokuapp.com/" target="_blank") here] or you can check the code on #[a(href="https://github.com/MonkeyDDeveloper/fp-edie-homepage" target="_blank") Github.]
+                    p A challenge provided by devChallenges.io, to improve CSS skills, mainly flexbox and gridcss.
+                .job-links
+                    a.demo(href="https://fp-edie-homepage.herokuapp.com/", target="_blank") Demo
+                    a.github(href="https://github.com/MonkeyDDeveloper/fp-edie-homepage", target="_blank") Github
             .project.project-4
                 .job-photo
                     img(src="/public/interior-consultant.png", alt="interior-consultant")
@@ -141,7 +152,10 @@ html(lang="es")
                     p #CSS #HTML
                     h4 Interior Consultant Challenge
                 .job-description
-                    p A challenge provided by devChallenges.io, using flexbox to make a responsive design. You can see the result by clicking #[a(href="https://fp-interior-consultant.herokuapp.com/" target="_blank") here] or you can check the code on #[a(href="https://github.com/MonkeyDDeveloper/fp-interior-consultant" target="_blank") Github.]
+                    p A challenge provided by devChallenges.io, using flexbox to make a responsive design.
+                .job-links
+                    a.demo(href="https://fp-interior-consultant.herokuapp.com/", target="_blank") Demo
+                    a.github(href="https://github.com/MonkeyDDeveloper/fp-interior-consultant", target="_blank") Github
             .project.project-5
                 .job-photo
                     img(src="/public/team-page.png", alt="team-page")
@@ -149,7 +163,10 @@ html(lang="es")
                     p #CSS #HTML
                     h4 Team Page Challenge
                 .job-description
-                    p Small CSS challenge provided by devChallenges.io to use a little of flexbox to make a responsive web page. You can see the result by clicking #[a(href="https://fp-team-page.herokuapp.com/" target="_blank") here] or you can check the code on #[a(href="https://github.com/MonkeyDDeveloper/fp-team-page" target="_blank") Github.]
+                    p Small CSS challenge provided by devChallenges.io to use a little of flexbox to make a responsive web page.
+                .job-links
+                    a.demo(href="https://fp-team-page.herokuapp.com/", target="_blank") Demo
+                    a.github(href="https://github.com/MonkeyDDeveloper/fp-team-page", target="_blank") Github
             .project.project-6
                 .job-photo
                     img(src="/public/404.png", alt="404")
@@ -157,7 +174,10 @@ html(lang="es")
                     p #HTML #CSS
                     h4 404 Not Found Challenge
                 .job-description
-                    p Simple web page to practice mainly HTML, thanks to devChallenges.io. You can see the result by clicking #[a(href="https://fp-404-notfound.herokuapp.com/" target="_blank") here] or you can check the code on #[a(href="https://github.com/MonkeyDDeveloper/FP-404NOTFOUND" target="_blank") Github.]
+                    p Simple web page to practice mainly HTML, thanks to devChallenges.io.
+                .job-links
+                    a.demo(href="https://fp-404-notfound.herokuapp.com/", target="_blank") Demo
+                    a.github(href="https://github.com/MonkeyDDeveloper/FP-404NOTFOUND", target="_blank") Github
         script(src="/public/index.js")
 
 

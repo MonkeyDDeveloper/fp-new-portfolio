@@ -1,7 +1,7 @@
 (()=> {
     const projects_container = document.querySelector('.projects');
     const show_projects_message = document.querySelector('.show_projects_message');
-    const hrefs = document.querySelectorAll('a');
+
 
     const update_projects_unfocus = () => {
         projects_container.classList.remove('focus');
