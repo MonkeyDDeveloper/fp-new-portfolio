@@ -512,6 +512,12 @@ a:hover {
     opacity: 1;
     pointer-events: all;
 }
+.projects.focus ~ .project-7 {
+    z-index: 1000;
+    transform: translateY(710%);
+    opacity: 1;
+    pointer-events: all;
+}
 
 .project p {
     color: #e0e0e0;
