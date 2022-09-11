@@ -5,7 +5,7 @@
 
     const update_projects_unfocus = () => {
         projects_container.classList.remove('focus');
-        show_projects_message.textContent = "Click to show projects (6)"
+        show_projects_message.textContent = "Click to show projects (8)"
     }
 
     const update_projects_focus = () => {
