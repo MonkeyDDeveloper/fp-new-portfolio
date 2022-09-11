@@ -475,7 +475,9 @@ a:hover {
 .project-3 {
     top: 950px;
 } */
-
+.projects.focus ~ .project-1 img {
+    height: 90%;
+}
 .projects.focus ~ .project-1 {
     z-index: 1000;
     transform: translateY(50%);
@@ -515,6 +517,12 @@ a:hover {
 .projects.focus ~ .project-7 {
     z-index: 1000;
     transform: translateY(710%);
+    opacity: 1;
+    pointer-events: all;
+}
+.projects.focus ~ .project-8 {
+    z-index: 1000;
+    transform: translateY(820%);
     opacity: 1;
     pointer-events: all;
 }
