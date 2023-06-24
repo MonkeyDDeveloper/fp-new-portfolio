@@ -1,0 +1,354 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+section {
+	margin-bottom: 1rem;
+}
+
+.nav-item {
+	font-family: monospace;
+	transition: transform 200ms ease;
+}
+
+.nav-item:hover {
+	transform: scale(1.05);
+}
+
+.presentation-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: max-content;
+	grid-template-areas:
+		"creator-names pet-images"
+	;
+}
+
+.creator-names {
+	/* max-width: 100%; */
+	grid-area: creator-names
+}
+
+.pet-images {
+	/* max-width: 100%; */
+	grid-area: pet-images
+}
+
+@media (max-width: 1200px) {
+	.presentation-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: max-content;
+		grid-template-areas:
+			"creator-names"
+			"pet-images"
+		;
+	}
+}
+
+.my-name {
+	transition: text-shadow 200ms ease;
+	font-family: 'Lobster', cursive;
+}
+
+.my-name:hover {
+	text-shadow: 4px 4px 50px rgb(21 94 117);
+}
+
+.last-name {
+	text-align: right;
+}
+
+.my-name {
+	font-size: 4vw; /* Tamaño del texto en relación al ancho de la ventana */
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+	.my-name {
+		font-size: 20vw; /* Tamaño del texto más grande para pantallas pequeñas */
+	}
+}
+
+/* Media query para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+	.my-name {
+		font-size: 13vw; /* Tamaño del texto para pantallas medianas */
+	}
+}
+  
+  /* Media query para pantallas grandes */
+@media screen and (min-width: 1201px) {
+	.my-name {
+		font-size: 10vw;
+	}
+}
+
+@media (min-width: 250px) and (max-width: 1200px) {
+	.last-name {
+		text-align: center;
+	}
+}
+
+.about {
+	transition: text-underline-offset 200ms ease, color 200ms ease, text-shadow 200ms ease;
+}
+
+.about:hover {
+	text-shadow: 4px 4px 50px rgb(21 94 117);
+}
+
+.card-grid {
+	display: grid;
+	grid-template-areas:
+		"cardHeader cardHeader"
+		"cardDescription cardDescription"
+		"cardImages cardImages"
+	;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, max-content);
+}
+
+.card-work-grid {
+	display: grid;
+	grid-template-areas:
+		"cardHeader"
+		"cardWork"
+	;
+	grid-template-columns: 1fr;
+	grid-template-rows: max-content;
+}
+
+@media (min-width: 768px) {
+	.card-grid {
+		display: grid;
+		grid-template-areas:
+			"cardHeader cardImages"
+			"cardDescription cardImages"
+		;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, max-content);
+	}
+}
+
+.cardHeader {
+	grid-area: cardHeader;
+	font-family: 'Lobster', cursive;
+}
+
+.cardDescription {
+	grid-area: cardDescription;
+}
+
+.cardWork {
+	grid-area: cardWork;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, max-content);
+}
+
+.cardWorkImageContainer {
+	width: 100%;
+}
+
+@media (min-width: 450px) {
+	.cardWorkImageContainer {
+		width: 65%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.cardWorkImageContainer {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.cardWork {
+		grid-area: cardWork;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		grid-template-rows: repeat(1, max-content);
+	}
+}
+
+@media (max-width: 500px) {
+	.cardImages {
+		grid-area: cardImages;
+		display: grid;
+		grid-template-areas:
+			"node-logo express-logo mongodb-logo socketio-logo typescript-logo mysql-logo"
+			"vue-logo quasar-logo bootstrap-logo tailwind-logo html-logo css-logo"
+			"react-logo git-logo github-logo swagger-logo digitalocean-logo heroku-logo"
+			"letsencrypt-logo . . . . ."
+		;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, min-content);
+	}
+}
+
+@media (min-width: 500px) {
+	.cardImages {
+		grid-area: cardImages;
+		display: grid;
+		grid-template-areas:
+			"node-logo express-logo mongodb-logo socketio-logo typescript-logo mysql-logo"
+			"vue-logo quasar-logo bootstrap-logo tailwind-logo html-logo css-logo"
+			"react-logo git-logo github-logo swagger-logo digitalocean-logo heroku-logo"
+			"letsencrypt-logo . . . . ."
+		;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(4, min-content);
+	}
+}
+
+@media (min-width: 600px) {
+	.cardImages {
+		grid-area: cardImages;
+		display: grid;
+		grid-template-areas:
+			"node-logo express-logo mongodb-logo socketio-logo typescript-logo mysql-logo vue-logo quasar-logo"
+			"bootstrap-logo tailwind-logo html-logo css-logo react-logo git-logo github-logo swagger-logo"
+			"digitalocean-logo heroku-logo letsencrypt-logo . . . . ."
+		;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(3, min-content);
+	}
+}
+
+@media (min-width: 768px) {
+	.cardImages {
+		grid-area: cardImages;
+		display: grid;
+		grid-template-areas:
+			"node-logo express-logo mongodb-logo"
+			"socketio-logo typescript-logo mysql-logo"
+			"vue-logo quasar-logo bootstrap-logo"
+			"tailwind-logo html-logo css-logo"
+			"react-logo git-logo github-logo"
+			"swagger-logo digitalocean-logo heroku-logo"
+			"letsencrypt-logo . ."
+
+		;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, min-content);
+	}
+}
+
+@media (min-width: 1000px) {
+	.cardImages {
+		grid-area: cardImages;
+		display: grid;
+		grid-template-areas:
+			"node-logo express-logo mongodb-logo socketio-logo typescript-logo mysql-logo ."
+			"vue-logo quasar-logo bootstrap-logo tailwind-logo html-logo css-logo react-logo"
+			"git-logo github-logo swagger-logo . . . ."
+			"digitalocean-logo heroku-logo letsencrypt-logo . . . ."
+		;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(4, min-content);
+	}
+}
+
+.gridItem {
+	transition: transform 200ms ease;
+}
+
+.gridItem:hover {
+	transform: scale(1.2);
+	box-shadow: 1px -1px 20px 3px rgb(21 94 117);
+	-webkit-box-shadow: 1px -1px 20px 3px rgb(21 94 117);
+	-moz-box-shadow: 1px -1px 20px 3px rgb(21 94 117);
+	;
+}
+
+.node-logo {
+	grid-area: node-logo;
+}
+
+.express-logo {
+	grid-area: express-logo;
+}
+
+.vue-logo {
+	grid-area: vue-logo;
+}
+
+.mongodb-logo {
+	grid-area: mongodb-logo;
+}
+
+.mysql-logo {
+	grid-area: mysql-logo;
+	;
+}
+
+.quasar-logo {
+	grid-area: quasar-logo;
+	;
+}
+
+.bootstrap-logo {
+	grid-area: bootstrap-logo;
+	;
+}
+
+.tailwind-logo {
+	grid-area: tailwind-logo;
+	;
+}
+
+.html-logo {
+	grid-area: html-logo;
+	;
+}
+
+.css-logo {
+	grid-area: css-logo;
+	;
+}
+
+.typescript-logo {
+	grid-area: typescript-logo;
+	;
+}
+
+.react-logo {
+	grid-area: react-logo;
+	;
+}
+
+.socketio-logo {
+	grid-area: socketio-logo;
+}
+
+.git-logo {
+	grid-area: git-logo;
+}
+
+.github-logo {
+	grid-area: github-logo;
+}
+
+.swagger-logo {
+	grid-area: swagger-logo;
+}
+
+.digitalocean-logo {
+	grid-area: digitalocean-logo;
+}
+
+.heroku-logo {
+	grid-area: heroku-logo;
+}
+
+.letsencrypt-logo {
+	grid-area: letsencrypt-logo;
+}
