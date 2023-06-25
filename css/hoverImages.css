@@ -1,0 +1,49 @@
+.me-images::before {
+    position: absolute;
+    content: "Touch or hover";
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-family: monospace;
+    opacity: 0.5;
+}
+
+.me-nonames {
+	width: 90%;
+	transform: scale(1.25) translateY(-5%);
+	transition: transform 200ms ease-out;
+	z-index: 10;
+}
+
+.me-names {
+	width: 90%;
+	opacity: 0;
+	z-index: 5;
+	will-change: opacity;
+	transform: scale(1.25) translateY(-5%);
+	transition: opacity 200ms ease-out, transform 200ms ease-out;
+	box-shadow: -3px 0px 94px 34px #71A9F7;
+	-webkit-box-shadow: -3px 0px 94px 34px #71A9F7;
+	-moz-box-shadow: -3px 0px 94px 34px #71A9F7;
+}
+
+.me-nonames:hover {
+	transform: scale(1.50)
+}
+
+.me-nonames:hover+img {
+	opacity: 1;
+	transform: scale(1.50)
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+	.me-nonames {
+		width: 60%;
+		transform: scale(1.25) translateY(-5%)
+	}
+
+	.me-names {
+		width: 60%;
+		transform: scale(1.25) translateY(-5%)
+	}
+}

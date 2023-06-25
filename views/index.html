@@ -1,0 +1,523 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="/public/logo_large.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/public/hoverImages.css" />
+    <link rel="stylesheet" href="/public/tailwind_build.css" />
+    <link rel="stylesheet" href="/public/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Fray Developer</title>
+</head>
+
+<body id="index" class="night bg-stone-900 background min-h-screen border p-4">
+    <nav id="navigation" class="w-full md:w-3/4 mx-auto grid grid-rows-2 grid-cols-2 md:grid-rows-1 lg:grid-rows-1 md:grid-cols-4 lg:grid-cols-4 mb-1">
+        <a href="#whoAmI"
+            class="nav-item inline-block text-center w-auto mx-1 mb-2 border border-1 border-neutral-50 text-lg text-neutral-50 p-1 hover:bg-neutral-50 hover:text-stone-900 hover:border-stone-900">
+            Who Am I?
+        </a>
+        <a href="#experience"
+            class="nav-item inline-block text-center w-auto mx-1 mb-2 border border-1 border-neutral-50 text-lg text-neutral-50 p-1 hover:bg-neutral-50 hover:text-stone-900 hover:border-stone-900">
+            My experience
+        </a>
+        <a href="#personalWork"
+            class="nav-item inline-block text-center w-auto mx-1 mb-2 border border-1 border-neutral-50 text-lg text-neutral-50 p-1 hover:bg-neutral-50 hover:text-stone-900 hover:border-stone-900">
+            My work
+        </a>
+        <a href="#aboutMe"
+            class="nav-item inline-block text-center w-auto mx-1 mb-2 border border-1 border-neutral-50 text-lg text-neutral-50 p-1 hover:bg-neutral-50 hover:text-stone-900 hover:border-stone-900">
+            Myself
+        </a>
+    </nav>
+    <main class="p-1 md:p-10 min-h-max border w-full md:w-3/4 mx-auto mb-2">
+        <section class="border  section presentation-grid h-auto">
+            <div class="creator-names border grid items-center">
+                <div class="">
+                    <p
+                        class="my-name name text-cyan-600 hover:text-cyan-300 text-left p-2 text-9xl font-serif font-extrabold">
+                        Javier
+                    </p>
+                    <p
+                        class="my-name last-name text-cyan-600 hover:text-cyan-300 nameborder p-2 text-9xl font-serif font-extrabold">
+                        Fray
+                    </p>
+                    <p
+                        class="font-mono font-bold text-sm text-white underline underline-offset-4 text-right md:text-xl hover:cursor-pointer p-2 mt-3">
+                        Backend developer
+                    </p>
+                </div>
+            </div>
+            <div class=" border pet-images">
+                <div class="relative overflow-hidden w-full h-full flex justify-center align-middle me-images">
+                    <img src="/public/COMISION2.png" class="me-nonames hover:cursor-pointer">
+                    <img src="/public/COMISION8.png" class="me-names absolute">
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="whoAmI" class="border w-full md:w-3/4 mx-auto p-1 md:p-10 mb-2">
+        <section class="card-grid border section section-2">
+            <h3 class="cardHeader text-cyan-500 text-5xl font-mono font-bold p-1 border">
+                Who Am I?
+            </h3>
+            <p class="cardDescription text-white text-lg font-mono p-1 border">
+                My name is Javier and I'm web developer and a pet lover, I work mainly with MERN stack and these are the
+                technologies I have worked with &#8594;
+                <br>
+                <br>
+                <a href="#index" class="underline underline-offset-8">Return to index ☝🏻</a>
+                <br>
+                <a href="#contactInformation" class="underline underline-offset-8">Contact me! <span
+                        class="material-symbols-outlined">connect_without_contact</span></a>
+            </p>
+            <section class="cardImages text-white text-xl font-mono p-4 border gap-0.5">
+                <div class="gridItem hover:cursor-pointer node-logo h-full">
+                    <img src="/public/nodeLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer mongodb-logo h-full">
+                    <img src="/public/mongodbLogo.svg" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer express-logo h-full">
+                    <img src="/public/expressjsLogo.png" class="object-cover bg-gray-200">
+                </div>
+                <div class="gridItem hover:cursor-pointer socketio-logo h-full">
+                    <img src="/public/socketioLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer typescript-logo h-full">
+                    <img src="/public/typescriptLogo.png" class="object-cover bg-gray-200">
+                </div>
+                <div class="gridItem hover:cursor-pointer mysql-logo h-full">
+                    <img src="/public/mysqlLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer vue-logo h-full">
+                    <img src="/public/vueLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer quasar-logo h-full">
+                    <img src="/public/quasarLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer bootstrap-logo h-full">
+                    <img src="/public/bootstrapLogo.png" class="object-cover bg-gray-200">
+                </div>
+                <div class="gridItem hover:cursor-pointer react-logo h-full">
+                    <img src="/public/reactLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer tailwind-logo h-full">
+                    <img src="/public/tailwindLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer html-logo h-full">
+                    <img src="/public/htmlLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer css-logo h-full">
+                    <img src="/public/cssLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer git-logo h-full">
+                    <img src="/public/gitLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer github-logo h-full">
+                    <img src="/public/githubLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer swagger-logo h-full">
+                    <img src="/public/swaggerLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer digitalocean-logo h-full">
+                    <img src="/public/digitaloceanLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer heroku-logo h-full">
+                    <img src="/public/herokuLogo.png" class="object-cover">
+                </div>
+                <div class="gridItem hover:cursor-pointer letsencrypt-logo h-full">
+                    <img src="/public/letsencryptLogo.png" class="object-cover">
+                </div>
+            </section>
+        </section>
+    </section>
+    <section id="experience" class="border w-full md:w-3/4 mx-auto p-1 md:p-10 mb-2">
+        <section class="card-work-grid border section section-2 min-h-min">
+            <h3 class="cardHeader text-cyan-500 text-5xl font-mono font-bold p-1 border">
+                My experience
+            </h3>
+            <section class="cardWork text-white font-mono p-1">
+                <div class="workDescription border p-1">
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Soluciones y Proyectos SA
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        During my 9-month professional journey up until the current date, I have honed my skills in Git,
+                        GitLab, Vue.js, and Node.js. Furthermore, I have cultivated proficiencies in teamwork and client
+                        interaction, utilizing efficient task tracking and management tools to enhance my performance.
+                        Serving as a full-stack developer, I have contributed to the company's flagship project by
+                        developing new features, troubleshooting issues, and refactoring legacy code on both the client
+                        and server sides.
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-3">
+                    Principal Skills
+                    <ul>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            1. Git</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            2. GitLab</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            3. Vue.js</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            4. Node.js</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            5. MongoDB</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            6. Teamwork</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            7. Client Interaction</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            8. Task Tracking and Management</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            9. Full-stack Development</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            10. Feature Development</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            11. Troubleshooting</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            12. Code Refactoring</li>
+                    </ul>
+                </div>
+                <div class="workDescription border p-1">
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        My thesis project
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        Throughout a year and a half of my thesis project, I delved into a comprehensive study of web
+                        development principles. My primary objective was to design and develop an innovative application
+                        that would allow students at my educational institute to enroll quickly and effortlessly. The
+                        aim was to address various challenges associated with the enrollment process, such as optimizing
+                        time and reducing monetary costs. The successful |implementation of this project showcased a
+                        significant reduction in enrollment time, reaching an impressive 80% improvement in efficiency.
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-3">
+                    Principal Skills
+                    <ul>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            1. Study of Web Development Principles</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            2. Design and Development of an Innovative Application</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            3. Node.js</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            4. DigitalOcean</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            5. Socket.io</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            6. Mongoose</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            7. Express.js</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            8. GitHub</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            9. HTML</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            10. CSS</li>
+                        <li class="text-orange-500 hover:cursor-pointer hover:font-bold hover:text-yellow-500 text-sm">
+                            11. Bootstrap</li>
+                    </ul>
+                </div>
+            </section>
+            <a href="#index" class="p-1 underline underline-offset-8 text-white text-xl font-mono">Return to index
+                ☝🏻</a>
+            <a href="#contactInformation" class="p-1 underline underline-offset-8 text-white text-xl font-mono">Contact
+                me! <span class="material-symbols-outlined">
+                    connect_without_contact
+                </span></a>
+        </section>
+    </section>
+    <section id="personalWork" class="border w-full md:w-3/4 mx-auto p-1 md:p-10 mb-2">
+        <section class="card-work-grid border section section-2">
+            <h3 class="cardHeader text-cyan-500 text-5xl font-mono font-bold p-1 border">
+                My work
+            </h3>
+            <section class="cardWork text-white font-mono p-1">
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/enrollment-application.png" title="Enrollment application"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#NodeJS #MongoDB #Socket.io</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Enrollment Web Application
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        Development of a web application based on NodeJS, using a document database (MongoDB) to improve
+                        efficiency in student enrollment at ISPIB MBR, Nueva Loja - Ecuador.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/tesis-appmatriculas" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/dApp.png" title="dApp Internet Computer"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#motoko #javascript</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Student Wall dApp (Internet Computer)
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        Using canisters and the power of internet computer, this little application lets you
+                        authenticate with your internet identity, and upload text, images and videos in a public chat.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://q6h7l-hyaaa-aaaan-qds4a-cai.icp0.io/" target="_blank">Demo</a> <a
+                            class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/student_wall_dapp" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/loginBookSaver.jpg" title="Book manager"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#NodeJS #TypeScript #Express #Passport</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Book manager
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        A personal project that I decided to undertake in order to improve my TypeScript, Express, and
+                        Passport skills.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://fine-rose-lamb-coat.cyclic.app/" target="_blank">Demo</a> <a
+                            class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/fp-book-acount" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/socket_chat.png" title="Real time chat"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#NodeJS #Socket.io #MongoDB</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Real time chat
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        Real time chat project to complete the course 'Learning NodeJS' on LinkedIn learning.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/fp-socket-chat" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/contact-saver.png" title="Simple Contact Saver"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#NodeJS #MySQL</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Simple Contact Saver
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        Own challenge based on NodeJS, to store contact information in a relational database, MySQL.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/fp-simple-contact-saver"
+                            target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/edie-homepage.png" title="Edie HomePage Challenge"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#CSS #HTML</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Edie HomePage Challenge
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        A challenge provided by devChallenges.io, to improve CSS skills, mainly flexbox and gridcss.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://maroon-seagull-robe.cyclic.app/" target="_blank">Demo</a> <a
+                            class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/fp-edie-homepage" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/interior-consultant.png" title="Interior Consultant Challenge"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#CSS #HTML</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Interior Consultant Challenge
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        A challenge provided by devChallenges.io, using flexbox to make a responsive design.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/fp-interior-consultant" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/team-page.png" title="Team Page Challenge"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#CSS #HTML</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        Team Page Challenge
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        Small CSS challenge provided by devChallenges.io to use a little of flexbox to make a responsive
+                        web page.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/fp-team-page" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="workSkills border p-1">
+                    <div class="cardWorkImageContainer h-full mx-auto flex items-center overflow-hidden">
+                        <img src="/public/404.png" title="404 Not Found Challenge"
+                            class="object-contain hover:cursor-pointer">
+                    </div>
+                </div>
+                <div class="workDescription border p-1">
+                    <p class="text-sm font-mono text-cyan-200">#HTML #CSS</p>
+                    <h3
+                        class="hover:cursor-pointer text-2xl font-mono text-white font-bold underline underline-offset-4">
+                        404 Not Found Challenge
+                    </h3>
+                    <br>
+                    <p class="text-sm font-mono text-white">
+                        Simple web page to practice mainly HTML, thanks to devChallenges.io.
+                    </p>
+                    <p class="text-right">
+                        <a class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://plum-beautiful-swallow.cyclic.app/" target="_blank">Demo</a> <a
+                            class="underline underline-offset-4 font-mono hover:cursor-pointer text-cyan-600 hover:text-cyan-300"
+                            href="https://github.com/MonkeyDDeveloper/FP-404NOTFOUND" target="_blank">Github</a>
+                    </p>
+                    <br>
+                </div>
+            </section>
+            <a href="#index" class="p-1 underline underline-offset-8 text-white text-xl font-mono">Return to index
+                ☝🏻</a>
+            <a href="#contactInformation" class="p-1 underline underline-offset-8 text-white text-xl font-mono">Contact
+                me! <span class="material-symbols-outlined">
+                    connect_without_contact
+                </span></a>
+        </section>
+    </section>
+    <section id="aboutMe" class="border w-full md:w-3/4 mx-auto p-1 md:p-10 mb-2">
+        <section class="card-work-grid border section section-2">
+            <h3 class="cardHeader text-cyan-500 text-5xl font-mono font-bold p-1 border">
+                About me
+            </h3>
+            <section class="cardWork text-white text-lg font-mono p-1 border">
+                <div class="workSkills border p-1">
+                    I am a technologist specialized in Automation and Instrumentation, with a strong focus on web
+                    development. My academic journey culminated in the successful completion of a thesis project that
+                    revolved around the creation of a web application for managing student enrollment in a higher
+                    education institute. Throughout my two-year study period, I have acquired expertise in various
+                    technologies such as Node.js, front-end development, and MongoDB.
+                    <br>
+                    <br>
+                    In my professional career, I have actively applied and expanded my skills by utilizing Node.js,
+                    Vue.js, MongoDB, Git, and GitLab since October of last year. The dynamic nature of the development
+                    field has deeply captivated me, and I constantly strive for continuous learning to stay abreast of
+                    the latest advancements.
+                    <br>
+                    <br>
+                    I am genuinely passionate about leveraging my knowledge and skills to contribute to the development
+                    industry. The prospect of taking on new challenges and pushing the boundaries of what I can achieve
+                    excites me greatly. I am currently seeking fresh career opportunities that will allow me to further
+                    apply and enhance my expertise.
+                    <br>
+                    <br>
+                    With a combination of enthusiasm and humility, I am eager to collaborate with like-minded
+                    professionals and contribute to meaningful projects. I believe in the power of teamwork and
+                    continuous growth, and I am committed to making a positive impact in any organization I join.
+                    <br>
+                    <br>
+                    Thank you for considering my profile, and I look forward to exploring new possibilities and
+                    embarking on exciting ventures in my career journey!
+                </div>
+            </section>
+            <a href="#index" class="p-1 underline underline-offset-8 text-white text-xl font-mono">Return to index
+                ☝🏻</a>
+            <a href="#contactInformation" class="p-1 underline underline-offset-8 text-white text-xl font-mono">Contact
+                me! <span class="material-symbols-outlined">
+                    connect_without_contact
+                </span></a>
+        </section>
+    </section>
+    <section id="contactInformation" class="border w-full md:w-3/4 mx-auto p-1 md:p-10 mb-2">
+        <h3 class="cardHeader text-cyan-500 text-2xl font-mono font-bold p-1 border">
+            Contact information
+        </h3>
+        <p class="p-1 text-white text-xl font-mono">fraydeveloper@gmail.com</p>
+        <p class="p-1 text-white text-xl font-mono">Whatsapp <a href="https://wa.me/593988433654"
+                class="underline underline-offset-8 text-cyan-500">+593988433654</a></p>
+    </section>
+    <script src="/public/index.js"></script>
+</body>
+
+</html>
